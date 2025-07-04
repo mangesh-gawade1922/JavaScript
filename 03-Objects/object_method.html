@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head><title>Object Methods</title></head>
+<body>
+    <p id="demo"></p>
+    <button id="click-me">Click me!</button>
+<script>
+    let user = {
+    name: "Sharvari",
+    age: 22,
+}
+
+function sayHi() {
+    alert("Hi !");
+}
+
+user.message = sayHi;
+
+document.getElementById("demo").innerHTML = "Hi " + user.name;
+document.getElementById("click-me").addEventListener("click", user.message);
+</script>
+
+</body>

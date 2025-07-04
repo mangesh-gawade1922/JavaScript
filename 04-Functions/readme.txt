@@ -1,0 +1,9 @@
+- What are JavaScript Functions?
+- Function expressions
+- Function() Constructor
+- Self-invoking function
+- Functions as values
+- Functions as objects
+- Arrow Functions
+- Generator Function
+- Predefined Functions
