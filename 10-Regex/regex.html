@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head><title>Form validation</title></head>
+<body>
+    <form>
+        <input id="emfield" placeholder="Email" type="text" /><br/>
+        <button type="button" onclick="validate()">Submit</button>
+    </form>
+<script>
+    function validate() {
+
+        var mail = document.getElementById("emfield").value;
+
+        var regxPattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?/;
+
+        if(regxPattern.mail) {
+            alert("You have provided correct email ID");
+            return true;
+        } else {
+            alert("Please provide correct email ID");
+            document.myForm.Email.focus();
+            return false;
+        }
+    }
+</script>
+
+</body>
